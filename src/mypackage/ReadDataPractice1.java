@@ -17,7 +17,7 @@ public class ReadDataPractice1 {
 			System.out.println("Connection Established! ");
 			
 			Statement stmt = con.createStatement();
-			stmt.executeUpdate("insert into ct(id, name, salary) value(102, 'Kunal', 100000.80);");
+//			stmt.executeUpdate("insert into ct(id, name, salary) value(102, 'Kunal', 100000.80);");
 			ResultSet rs = stmt.executeQuery("select * from ct");
 			
 			while(rs.next()) {
